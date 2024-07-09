@@ -7,7 +7,7 @@ data "zentral_mdm_scep_config" "zentral-mdm" {
 }
 
 resource "zentral_mdm_ota_enrollment" "default" {
-  name                  = "Default "
+  name                  = "Default"
   display_name          = "Zentral MDM"
   blueprint_id          = zentral_mdm_blueprint.default.id
   push_certificate_id   = data.zentral_mdm_push_certificate.zentral-cloud.id
